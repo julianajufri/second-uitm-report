@@ -23,7 +23,7 @@ Route::view('welcome','welcome');
 
 Route::get('/view', 'WelcomeController@view');
 
-Auth::routes(['register' => false]);
+Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
